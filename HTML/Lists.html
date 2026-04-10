@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists in HTML</title>
+</head>
+<body>
+    <h1>Ordered List</h1>
+    <ol type="A"   start="15"> <!-- type attribute specifies the type of numbering for the list items, 1 means numbers -->
+        <!--start attribute specifies the starting number for the list, it read numbers only-->
+        <li>Biriyani</li>
+        <li>Dosa</li>
+        <li>Puri</li>
+    </ol>
+
+    <ol type="1"> 
+        <li>Biriyani</li>
+        <li>Dosa</li>
+        <li>Puri</li>
+    </ol>
+
+    <h1>Unordered List</h1>
+    <ul type="square"> <!-- type attribute specifies the type of bullet for the list items, disc means filled circle -->
+        <!--instead of square, you can use disc or circle-->
+        <li>Chapati</li>
+        <li>Idli</li>
+        <li>Poori</li>
+    </ul>
+
+    <h1>Description List / Definition List</h1> <!-- Description list is used to define terms and their descriptions -->
+    <dl>
+        <dt>HTML</dt> <!-- dt tag is used to define a term in a description list -->
+        <dd>HyperText Markup Language</dd> <!-- dd tag is used to describe the term defined by the dt tag -->
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JavaScript</dt>
+        <dd>A programming language used to create dynamic and interactive web content.</dd>
+    </dl>
+
+    <h1>Nested List</h1> <!-- It means lists in a list. Nested lists are lists that are contained within another list. They can be used to create sub-lists or to organize information hierarchically. -->
+    <ul>
+        <li><h2>Healthy Items</h2></li>
+        <li>Vegetables</li>
+        <dl>
+            <dt>Carrot</dt>
+            <dd>A root vegetable, often orange in color.</dd>
+            <dt>Broccoli</dt>
+            <dd>A green vegetable with a tree-like structure.</dd>
+            <dt>Spinach</dt>
+            <dd>A leafy green vegetable rich in iron and vitamins.</dd>
+        </dl>
+        <li>Fruits</li>
+        <dl>
+            <dt>Apple</dt>
+            <dd>A sweet, edible fruit produced by an apple tree.</dd>
+            <dt>Banana</dt>
+            <dd>A long, curved fruit with a yellow skin and soft, sweet flesh.</dd>
+            <dt>Orange</dt>
+            <dd>A citrus fruit with a tough, bright orange rind and juicy, segmented flesh.</dd>
+        </dl>
+    </ul>
+</body>
+</html>

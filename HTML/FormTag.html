@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Captcha form</title>
+</head>
+<body>
+    <fieldset style="text-align: center;"> <!-- fieldset tag is used to group related elements in a form, it creates a box around the grouped elements -->
+    <legend>Personal Info</legend> <!-- legend tag is used to provide a caption for the fieldset, it should be used inside the fieldset tag -->
+    <h2>Captcha Form</h2>
+    <!--forms are used to collect user-->
+    <form action="#" method="post" autocomplete="off"> <!-- action attribute specifies the URL where the form data will be sent when the form is submitted, method attribute specifies the HTTP method to be used when submitting the form data, autocomplete attribute specifies whether the browser should enable autocomplete for the form -->
+
+        <!--for attribute links the label to the input field. for and id should match, if we clicks on enter captcha field, the box will be focused-->
+        <label for="captcha">Enter Captcha: </label>
+        <input type="text" id="captcha" placeholder="Enter Captcha..." name="captcha">
+        <!--placeholder is the text that appears in the input field before the user types -->
+        <!--name="" is used to identify the input field when the form is submitted, it will visible in url when the form is submitted -->
+        <br>
+        <br>
+        <label for="un">Username: </label>
+        <input type="text" id="un" name="username" placeholder="Enter your username...">
+        <br>
+        <br>
+        <label for="email_field">Email: </label>
+        <input type="email" id="email_field" name="email" placeholder="Enter your email...">
+        <br>
+        <br>
+        <label>Password: <span style="color: red;">*</span> </label>
+        <input type="password" name="password" placeholder="Enter your password...">
+        <br> <br>
+        <label>Mobile Number</label>
+        <input type="tel" name="mobile" placeholder="Enter your mobile number..." pattern="[0-9]{10}" title="Please enter a valid 10-digit mobile number">
+        <br> <br>
+        <label>Age</label>
+        <input type="number" name="age" placeholder="Enter your age..." min="1" max="100">
+        <br> <br>
+        <label>Date of Birth:</label>
+        <input type="date" name="dob">
+        <br> <br>
+        <label>Date of birth with time:</label>
+        <input type="datetime-local" name="dob_time">
+        <br> <br>
+
+    </fieldset>
+
+    <fieldset style="text-align: center;">
+    <legend>General Info</legend>
+        <label>Profile Picture:</label>
+        <input type="file" name="profile_pic" accept="image/*">
+        <br> <br>
+        <label>Website URL:</label>
+        <input type="url" name="other" placeholder="Enter your website url...">
+        <br> <br>
+        <label>Other Information:</label>
+        <input type="image" src="Nature.jpg" alt="Submit" width="100" height="50">
+        <br><br>
+        <label>Rate:</label>
+        <input type="range" name="HTML range" min="0" max="100" value="50">
+        <br><br>
+        <label>Search:</label>
+        <input type="search">
+        <br><br>
+        <label><input type="checkbox" name="opt1" value="">Cash</label>
+        <label><input type="checkbox" name="opt2" value="Card">Card</label>
+        <label><input type="checkbox" name="opt3" value="UPI">UPI</label>
+        <label><input type="checkbox" name="opt4" value="Razorpay">Razorpay</label>
+        <br><br>
+        <label>Gender:</label>
+        <input type="radio" name="gender" value="male"> Male
+        <input type="radio" name="gender" value="female"> Female
+        <input type="radio" name="gender" value="other"> Other
+        <br><br>
+        <label>Hidden Box:</label>
+        <input type="hidden">
+        <br>
+    </fieldset><br>
+        <!-- Select tag is used to create a dropdown list -->
+        <label for="tech">Select the Tech Stack:</label>
+        <select name="tech" id="tech">  <!--<select name="tech" id="tech" multiple></select> -->
+                                        <!-- multiple attribute is used to select multiple options from the dropdown list, if we use multiple then we have to use ctrl key to select multiple options -->
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+        </select>
+        <br><br>
+        <label for="comments">Comments:</label>
+        <textarea name="comments" id="comments" placeholder="Enter your comments..." width="300" height="100" rows="5" cols="50"></textarea>
+        <br><br>
+        <input type="submit" style="background-color: rgb(92, 244, 92);"> &nbsp; &nbsp; <!-- &nbsp; is used to add space between the buttons, how much time we type that much space will be added -->
+        <button type="reset" style="background-color: rgb(244, 92, 92);">Cancel</button>
+        <button type="button" disabled style="background-color: rgb(218, 168, 168);">Disabled</button>
+    </form>
+</body>
+</html>

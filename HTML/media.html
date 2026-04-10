@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media</title>
+</head>
+<body>
+    <h1>Image</h1>
+       <img src="Nature.jpg" alt="Nature is loaded" width="20%" height="10%" title="Nature Lover"> <!-- img tag is used to display images, 
+       src attribute specifies the path to the image, alt attribute provides alternative text for the image, 
+       width and height attributes specify the dimensions of the image. image is inline level element -->
+       <!-- alt attribute provides alternative text for the image and title attribute provides a tooltip means while hovering over the image is shows the name-->
+       <!-- The benefit of using % while giving dimensions is that it makes the image responsive to different screen sizes and it can adjust the size accordingly -->
+       <img src="IMG_20260131_165102.jpg" alt="Another Image" width="200px" height="150px" title="Another Image">
+       <!--px means pixels, if use px then the image will have a fixed size -->
+
+       <!--clickable image-->
+       <br>
+       <a href="https://www.youtube.com/" target="_blank">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/018/930/572/small_2x/youtube-logo-youtube-icon-transparent-free-png.png" alt="Youtube Logo" width="300px" height="200px" title="YouTube">
+       </a>
+
+    <h1>Video</h1>
+       <video src="https://production-inventory-service.s3.ap-south-1.amazonaws.com/kodnest-documents/assets/closeup_of_natural_weather_phenomenon_6891973.mp4"
+       controls
+       muted
+       autoplay
+       loop
+       poster="Nature.jpg"
+       height="200px"
+       width="300px"
+       >
+       </video>
+</body>
+</html>
